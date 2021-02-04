@@ -1,0 +1,56 @@
+@import "vars/colors";
+@import "vars/fonts";
+
+
+body {
+    background: $fundo;
+    font-family: $regular;
+}
+
+
+.header {
+    background: $fundo-header;
+
+    h1 {
+        color: $fonte-header;
+        font-weight: 100;
+    }
+}
+
+.balanco{
+    margin-top: -3rem;
+
+    h2{
+        color: $fonte-balanco;
+    }
+
+    .card{
+        background: $fonte-balanco;
+        color: $fonte-card;
+
+        &.total{
+            background: $fundo-total;
+            color: $fonte-balanco;
+        }
+    }
+}
+
+.transacoes{
+    h2{
+        color: $fonte-h2-transacoes;
+    }
+
+    th{
+        background: $fonte-balanco;
+        color:$fonte-table-th;
+    }
+
+    td{
+        background: $fonte-balanco;
+    }
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
