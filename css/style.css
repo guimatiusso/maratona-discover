@@ -1,0 +1,45 @@
+body {
+  background: #f0f2f5;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background: #2d4a22;
+}
+.header h1 {
+  color: #fff;
+  font-weight: 100;
+}
+
+.balanco {
+  margin-top: -3rem;
+}
+.balanco h2 {
+  color: #fff;
+}
+.balanco .card {
+  background: #fff;
+  color: #363f5f;
+}
+.balanco .card.total {
+  background: #49AA26;
+  color: #fff;
+}
+
+.transacoes h2 {
+  color: #363f5f;
+}
+.transacoes th {
+  background: #fff;
+  color: #969cb3;
+}
+.transacoes td {
+  background: #fff;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */
