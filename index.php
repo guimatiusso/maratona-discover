@@ -17,10 +17,10 @@
   </head>
 
   <body>
-    <div class="container-fluid header pt-4 px-0 pb-5">
-        <div class="row justify-content-md-center">
+    <div class="container-fluid header">
+        <div class="row justify-content-md-center mb-5">
             <div class="col-md-auto">
-                <h1>dev.finance$</h1>
+                <img src="./images/logo.svg" class="img-fluid" alt="Logo Dev Finance">
             </div>
         </div>
     </div>
@@ -28,26 +28,39 @@
     <main>
         <div>
             <div class="container balanco">
-                <h2 class="mb-3">Balanço</h2>
+                <div class="row">
+                    <h2 class="mb-3 sr-only">Balanço</h2>
 
-                <div class="card py-4 px-5 mb-4" style="width: auto;">
-                    <h3 class="fs-6 text">Entradas</h3>
-                    <p class="fs-2 text lh-lg mt-3">R$ 5.000,00</p>
-                </div>
-                <div class="card py-4 px-5 mb-4" style="width: auto;">
-                    <h3 class="fs-6 text">Saídas</h3>
-                    <p class="fs-2 text lh-lg mt-3">R$ 2.000,00</p>
-                </div>
-                <div class="card total py-4 px-5 mb-4" style="width: auto;">
-                    <h3 class="fs-6 text">Total</h3>
-                    <p class="fs-2 text lh-lg mt-3">R$ 3.000,00</p>
+                    <div class="card py-4 px-5 mb-4 mx-5" style="width: auto;">
+                        <h3 class="fs-6 text">
+                            <span>Entradas</span>
+                            <img src="./images/income.svg" alt="Imagem de Entradas">
+                        </h3>
+                        <p class="fs-2 text lh-lg mt-3">R$ 5.000,00</p>
+                    </div>
+                    <div class="card py-4 px-5 mb-4 mx-5" style="width: auto;">
+                        <h3 class="fs-6 text">
+                            <span>Saídas</span>
+                            <img src="./images/expense.svg" alt="Imagem de Saidas">
+                        </h3>
+                        <p class="fs-2 text lh-lg mt-3">R$ 2.000,00</p>
+                    </div>
+                    <div class="card total py-4 px-5 mb-4 mx-5" style="width: auto;">
+                        <h3 class="fs-6 text">
+                            <span>Total</span>
+                            <img src="./images/total.svg" alt="Imagem de Total">
+                        </h3>
+                        <p class="fs-2 text lh-lg mt-3">R$ 3.000,00</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div>
             <div class="container transacoes">
-                <h2 class="mt-5 mb-3 fw-normal">Transações</h2>
+                <h2 class="mt-5 mb-3 fw-normal sr-only">Transações</h2>
+
+                <a href="#" class="btn btn-link text-decoration-none mb-3">+ Nova Transação</a>
 
                 <table class="table">
                     <thead>
@@ -55,23 +68,33 @@
                             <th scope="col" class="border-bottom py-3 px-4">Descrição</th>
                             <th scope="col" class="border-bottom py-3 px-4">Valor</th>
                             <th scope="col" class="border-bottom py-3 px-4">Data</th>
+                            <th scope="col" class="border-bottom py-3 px-4"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Luz</td>
-                            <td>- R$ 500,00</td>
-                            <td>23/01/2021</td>
+                            <td class="descricao">Luz</td>
+                            <td class="negativo">- R$ 500,00</td>
+                            <td class="data">23/01/2021</td>
+                            <td>
+                                <img src="./images/minus.svg" alt="Remover transação">
+                            </td>
                         </tr>
                         <tr>
-                            <td>Criação de Website</td>
-                            <td>R$ 5.000,00</td>
-                            <td>24/01/2021</td>
+                            <td class="descricao">Criação de Website</td>
+                            <td class="positivo">R$ 5.000,00</td>
+                            <td class="data">24/01/2021</td>
+                            <td>
+                                <img src="./images/minus.svg" alt="Remover transação">
+                            </td>
                         </tr>
                         <tr>
-                            <td>Aluguel</td>
-                            <td>- R$ 1.500,00</td>
-                            <td>26/01/2021</td>
+                            <td class="descricao">Aluguel</td>
+                            <td class="negativo">- R$ 1.500,00</td>
+                            <td class="data">26/01/2021</td>
+                            <td>
+                                <img src="./images/minus.svg" alt="Remover transação">
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -80,7 +103,7 @@
     </main>
 
     <footer class="text-center">
-        <div class="container footer">
+        <div class="container footer pt-5 pb-4">
             <p>dev.finance$</p>
         </div>        
     </footer>
