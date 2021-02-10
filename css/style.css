@@ -107,10 +107,6 @@ table tbody tr td:last-child {
   opacity: 1;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
 footer {
   color: #3dd705;
   opacity: 0.6;
