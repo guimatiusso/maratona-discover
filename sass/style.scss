@@ -1,22 +1,13 @@
 @import "vars/colors";
 @import "vars/fonts";
 
+html {
+    font-size: 93.75%;
+}
 
 body {
     background: $fonte-h2-transacoes;
     font-family: $regular;
-}
-
-
-.header {
-    background: $fundo-header;
-
-    padding: 4rem 0 8rem 0;
-
-    h1 {
-        color: $fonte-header;
-        font-weight: 100;
-    }
 }
 
 .sr-only{
@@ -29,6 +20,17 @@ body {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+.header {
+    background: $fundo-header;
+
+    padding: 4rem 0 8rem 0;
+
+    h1 {
+        color: $fonte-header;
+        font-weight: 100;
+    }
 }
 
 .balanco{
@@ -55,6 +57,14 @@ body {
     }
 }
 
+.btn-primary{
+    background: $fundo-total;
+
+    &:hover{
+        background: $button-link-hover;
+    }
+}
+
 .transacoes{
     h2{
         color: $fonte-h2-transacoes;
@@ -62,7 +72,7 @@ body {
 
     a{
         color: $button-link;
-
+    
         &:hover{
             color: $button-link-hover;
         }
@@ -109,7 +119,32 @@ table tbody tr td:last-child{
     border-radius:0 0.25rem 0.25rem 0;
 }
 
+.modal-footer{
+    .btn-link {
+        color: $fonte-negativo;
+
+        opacity: 0.6;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
 footer{
-    color: $fonte-h2-transacoes;
+    color: $button-link-hover;
     opacity: 0.6;
+}
+
+@media (min-width: 800px){
+    .balanco{
+        font-size: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }

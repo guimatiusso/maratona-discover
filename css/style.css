@@ -1,15 +1,10 @@
+html {
+  font-size: 93.75%;
+}
+
 body {
   background: #363f5f;
   font-family: "Poppins", sans-serif;
-}
-
-.header {
-  background: #2d4a22;
-  padding: 4rem 0 8rem 0;
-}
-.header h1 {
-  color: #fff;
-  font-weight: 100;
 }
 
 .sr-only {
@@ -22,6 +17,15 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.header {
+  background: #2d4a22;
+  padding: 4rem 0 8rem 0;
+}
+.header h1 {
+  color: #fff;
+  font-weight: 100;
 }
 
 .balanco {
@@ -42,6 +46,13 @@ body {
 .balanco .card.total {
   background: #49AA26;
   color: #fff;
+}
+
+.btn-primary {
+  background: #49AA26;
+}
+.btn-primary:hover {
+  background: #3dd705;
 }
 
 .transacoes h2 {
@@ -88,9 +99,30 @@ table tbody tr td:last-child {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
-footer {
-  color: #363f5f;
+.modal-footer .btn-link {
+  color: #e92929;
   opacity: 0.6;
+}
+.modal-footer .btn-link:hover {
+  opacity: 1;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+footer {
+  color: #3dd705;
+  opacity: 0.6;
+}
+
+@media (min-width: 800px) {
+  .balanco {
+    font-size: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
