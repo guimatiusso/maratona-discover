@@ -33,21 +33,21 @@
                     <span>Entradas</span>
                     <img src="./images/income.svg" alt="Imagem de Entradas">
                 </h3>
-                <p class="fs-4 text lh-base mt-3" id="incomeDisplay">R$ 5.000,00</p>
+                <p class="fs-4 text lh-base mt-3" id="incomeDisplay">R$ 0,00</p>
             </div>
             <div class="card py-4 px-5 mb-4 mx-5">
                 <h3 class="fs-6 text">
                     <span>Saídas</span>
                     <img src="./images/expense.svg" alt="Imagem de Saidas">
                 </h3>
-                <p class="fs-4 text lh-base mt-3" id="expenseDisplay">R$ 2.000,00</p>
+                <p class="fs-4 text lh-base mt-3" id="expenseDisplay">R$ 0,00</p>
             </div>
             <div class="card total py-4 px-5 mb-4 mx-5">
                 <h3 class="fs-6 text">
                     <span>Total</span>
                     <img src="./images/total.svg" alt="Imagem de Total">
                 </h3>
-                <p class="fs-4 text lh-base mt-3" id="totalDisplay">R$ 3.000,00</p>
+                <p class="fs-4 text lh-base mt-3" id="totalDisplay">R$ 0,00</p>
             </div>
         </div>
 
