@@ -17,29 +17,18 @@
 //     }
 // }
 
+const Storage = {
+    get () {
+        return JSON.parse(localStorage.getItem('dev.finance:trnasactions')) || []
+    },
+
+    set (transactions) {
+        localStorage.setItem("dev.finances:transactions", JSON.stringify(transactions))
+    }
+}
+
 const Transaction = {
-    all: [
-        {
-            descricao: 'Luz',
-            montante: -50001,
-            data: '23/01/2021',
-        },
-        {
-            descricao: 'Website',
-            montante: 500000,
-            data: '23/01/2021',
-        },
-        {
-            descricao: 'Internet',
-            montante: -20012,
-            data: '23/01/2021',
-        },
-        {
-            descricao: 'App',
-            montante: 200000,
-            data: '23/01/2021',
-        }
-    ],
+    all: Storage.get(),
 
     add(transaction){
         Transaction.all.push(transaction)
@@ -236,22 +225,15 @@ const Form = {
     }
 }
 
-const Storage = {
-    get () {
-        return JSON.parse(localStorage.getItem('dev.finance:trnasactions')) || []
-    },
-
-    set (transactions) {
-        localStorage.setItem("dev.finances:transactions", JSON.stringify(transactions))
-    }
-},
-
 const App = {
     init() {
         Transaction.all.forEach((transaction, index) => {
             DOM.addtransaction(transaction, index)
         })
+
         DOM.updateBalance() 
+
+        Storage.set(Transaction.all)
     },
 
     reload() {
