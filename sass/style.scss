@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: $fonte-h2-transacoes;
+    background: $fundo;
     font-family: $regular;
 }
 
@@ -136,7 +136,7 @@ footer{
     opacity: 0.6;
 }
 
-@media (min-width: 800px){
+@media (min-width: 991px){
     .balanco{
         font-size: 80%;
         display: grid;
