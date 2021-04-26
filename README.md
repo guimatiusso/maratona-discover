@@ -11,7 +11,7 @@ ________________________________________________________________________________
 
 Para rodar o projeto, via PHP que agora é necessário (dentro do projeto), a primeira vez (necessário rodar apenas uma vez)é necessário utilizar:
 ```
-docker-compose up
+docker-compose build
 ```
 Após a execução do comando acima, basta somente executar o seguinte comando:
 ```
