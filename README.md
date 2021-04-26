@@ -9,7 +9,7 @@ ________________________________________________________________________________
 
 ### Utilizando o Docker
 
-Para rodar o projeto, via PHP que agora é necessário (dentro do projeto), a primeira vez (necessário rodar apenas uma vez)é necessário utilizar:
+Para rodar o projeto, via PHP que agora é necessário (dentro do projeto), a primeira vez (necessário rodar apenas uma vez) é necessário utilizar:
 ```
 docker-compose build
 ```
